@@ -40,8 +40,8 @@ select * from locations;
 select d.department_id, d.department_name, e.first_name, 
 l.city , c.country_name, r.region_name
 from departments d, employees e, countries c, regions r, locations l
-where d.manager_id = e.employee_id;
-
+where d.manager_id = e.employee_id and c.country_id = l.country_id
+and l.location_id = d.location_id and r.region_id = c.REGION_ID;
 --4. ‘Public Accountant’의 직책(job_title)으로 과거에 근무한 적이 있는 모든 사원의 사번과 이름을 출력
 -- (현재 ‘Public Accountant’의 직책(job_title)으로 근무하는 사원은 고려하지 않습니다.) 
 -- 이름은 first_name과 last_name을 합쳐 출력합니다. 
@@ -50,7 +50,7 @@ select * from job_history;
 select * from jobs;
 select * from employees;
 
-select e.first_name || ' ' || e.last_name
+select distinct e.first_name || ' ' || e.last_name
 from job_history jh, jobs j, employees e
 where j.job_title = 'Public Accountant'
 and jh.employee_id = e.employee_id;
