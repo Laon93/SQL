@@ -42,6 +42,7 @@ ELSE salary
 	END as "이번달 월급"
 	from employees;
 
+
 --decode
 select employee_id ,job_id, salary, decode(job_id ,
  'AC_ACCOUNT' , salary + salary * 0.5,

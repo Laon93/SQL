@@ -42,6 +42,7 @@ select * from regions;
 select * from regions order by length(region_name) desc;
 
 
+
 --10. 부서 사무실이 위치한 도시는? 도시 이름을 소문자로 오름차순 정렬(asc)
 select * from locations;
 select lower(city) from locations order by city asc;

@@ -25,5 +25,3 @@ else nvl(to_char(department_id), '부서 없음')
 
 
 
-
-

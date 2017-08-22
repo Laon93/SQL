@@ -47,6 +47,7 @@ from employees
 group by rollup(department_id, job_id)
 order by department_id, job_id;
 
+
 select case grouping(department_id) when 1 then '모든 부서' 
 else nvl(to_char(department_id), '부서 없음') end as "부서", 
   case grouping(job_id) when 1 then '모든 직책' 

@@ -4,7 +4,6 @@ title varchar2(120),
 author varchar2(50),
 pub_date date);
 
-
 insert into book values(1, '토지', '박경리', to_date('2017/08/21', 'yyyy/mm/dd'));
 commit;
 

@@ -22,7 +22,6 @@ grant create session to kickscar;
 --dev가 가지고 있는 book이라는 곳에 접근하여 select 문만 실행할 수 있다.
 grant select on dev.book to kickscar;
 
-
 conn /as sysdba;
 create role viewer;
 grant create session to viewer;
