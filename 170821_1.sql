@@ -18,8 +18,6 @@ update book set title = '토지2';
 select * from employees where job_id = 'FI_ACCOUNT';
 
 
-
-
 --타임스탬프 포맷을 확인하기
 select value from nls_database_parameters where parameter = 'NLS_TIMESTAMP_FORMAT';
 --char의 기본설정?을 확인하기

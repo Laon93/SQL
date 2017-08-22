@@ -16,8 +16,6 @@ where a.salary > b.salary;
 select first_name, salary
 from employees where salary > (select salary from employees where first_name = 'Lex');
 
-
-
 --Q 전체 직원의 평균 연월급보다 많이 받고 있는 직원들의 이름, 월급 출력
 select avg(salary) from employees;
 

@@ -41,7 +41,6 @@ from employees  where department_id is not null
 group by department_id having avg(salary) - min(salary) < 2000
 order by avg(salary) - min(salary) desc;
 
-
 -- 7. 업무별로 최고임금과 최저임금의 차이를 출력
 select * from employees;
 select job_id, max(salary) - min(salary) 

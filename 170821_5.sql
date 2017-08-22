@@ -23,7 +23,6 @@ grant create session to kickscar;
 grant select on dev.book to kickscar;
 
 
-
 conn /as sysdba;
 create role viewer;
 grant create session to viewer;

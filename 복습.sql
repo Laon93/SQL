@@ -36,5 +36,3 @@ else nvl(to_char(job_id), '직책 없음') end as "직책",
 	
 	
 	
-	
-	

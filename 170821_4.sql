@@ -15,7 +15,6 @@ select * from user_constraints where table_name = 'BOOK';
 
 select * from user_users;
 
-
 -- DML
 insert into author values(seq_author.nextval, '둘리' , null);
 

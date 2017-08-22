@@ -54,4 +54,3 @@ else nvl(to_char(department_id), '부서 없음') end as "부서",
  round(avg(salary), 0) from employees
 group by rollup(department_id, job_id)
 order by department_id, job_id;
-

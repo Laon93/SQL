@@ -109,5 +109,3 @@ values (seq_book.nextval, '토지', '박경리','kk' , sysdate);
 
 
 
-
-

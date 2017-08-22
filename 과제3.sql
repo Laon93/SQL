@@ -16,7 +16,6 @@ where a.department_id = c.department_id
 and a.manager_id = b.employee_id
 order by a.employee_id; 
 
-
 --2. 지역(regions)에 속한 나라들을 지역이름(region_name), 나라이름(country_name)으로 출력
 select * from regions;
 select * from countries;

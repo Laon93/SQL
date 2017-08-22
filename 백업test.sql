@@ -5,7 +5,6 @@ create table employees_bak01 as (select * from employees where job_id = 'FI_ACCO
 
 create table employees_bak01 as (select employee_id, first_name, last_name from employees where job_id = 'FI_ACCOUNT');
 
-
 select * from employees_bak01;
 
 --drop은 rollback;의 대상이 아니므로 매우 조심해서 사용해야한다.

@@ -37,7 +37,6 @@ select count(department_id) from departments where manager_id is null;
 select * from countries;
 select * from countries order by length(country_name) asc;
 
-
 --9.전 세계를 몇개의 지역으로 나누어 관리중? 각 지역의 이름 길이의 올림차순으로 정렬
 select * from regions;
 select * from regions order by length(region_name) desc;

@@ -2,7 +2,6 @@
 --rtrim --> 오른쪽만 제거
 select trim('#' from '####data base####') from dual;
 
-
 -- 실수값을 올림하여 정수로 만든다
 select ceil(4.9) from dual;
 select ceil(4.1) from dual;

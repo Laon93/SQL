@@ -35,6 +35,7 @@ constraint c_book_fk foreign key(author_no) references author(no)
 on delete set null,
 constraint c_book_check check(state in ('대여중', '대여가능'))
 );
+
 insert into author values(seq_author.nextval, 'sdf', null);
 select * from author;
 

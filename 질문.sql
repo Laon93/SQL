@@ -19,12 +19,9 @@ order by department_id, job_id;
 -- 2.
 select case grouping (department_id) when 1 then '모든 부서'
 else nvl(to_char(department_id), '부서 없음') 
-	end as "부서"
+	end as "부서";
 --department_id == null 이면 1을 반환해서 모든 부서라고 적는데
 --왜 또 null check를 하면 null이 나오지:var1
-
-
-
 
 
 

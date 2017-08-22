@@ -1,4 +1,3 @@
---
 
 --natural join
 select * from  employees 
