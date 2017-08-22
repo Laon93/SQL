@@ -64,7 +64,7 @@ select * from departments;
 
 select distinct a.employee_id, a.first_name, a.last_name, c.department_name
 from employees a, employees b, departments c
-where a.last_name = b.last_name
+where nvl(a.department_id, 0)  and a.last_name = b.last_name
 and a.employee_id != b.employee_id
 and a.department_id = c.department_id
 order by a.last_name desc;
